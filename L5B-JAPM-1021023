@@ -1,0 +1,32 @@
+#Introduccion a la programacion seccion 17
+#Jose Antonio Paz Marin
+#objetivo: crear un programa que indique el dia de la semana en base a la entrada realizada por el usuario
+#Entrada: numero del 1-7
+"""
+proceso
+1. solicitar al usuario que ingrese un numero entero de 1-7
+2. evaluar si el numero y devolver el dia de la semana
+salida
+devolver el dia de la semana
+"""
+try:
+    Numero=int(input("ingrese un numero entero(1-7): "))
+    if(Numero == 1):
+        print( "Hoy es Lunes")
+    elif(Numero == 2):
+        print("Hoy es Martes")
+    elif(Numero == 3):
+        print("Hoy es Miercoles")
+    elif(Numero == 4):
+        print("Hoy es Jueves")
+    elif(Numero == 5):
+        print("Hoy es Viernes")
+    elif(Numero == 6):
+        print("Hoy es Sabado")
+    elif(Numero == 7):
+        print( "Hoy es Domingo")
+    else:
+        print("el valoir ingresado no se encuentra en el rango solicitado" )
+    
+except ValueError:
+    print("el valor ingresado no es un numero")
