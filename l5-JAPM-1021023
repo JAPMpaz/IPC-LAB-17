@@ -1,0 +1,24 @@
+#Introduccion a la programacion seccion 17
+#Jose Antonio Paz Marin
+#objetivo: crear un programa que indique si un numero es posotovo, negativo o cero en base a la entrada realizada por el usuario
+#Entrada: numero entero
+"""
+proceso
+1. solicitar al usuario que ingrese un numero entero
+2. evaluar si el numero es positivo negativo o cero
+"""
+"""
+salida
+devolver el numero ingresado, seguido de la indicacion si es positivo, negativo o cero
+"""
+try:
+    Numero=int(input("ingrese un numero entero: "))
+    if(Numero > 0):
+        print(Numero, "es un numero positivo")
+    elif(Numero < 0):
+        print(Numero, "es un numeo negativo")
+    else:
+        print(Numero, "el numero es cero")
+    
+except ValueError:
+    print("el valor ingresado no es un numero")
